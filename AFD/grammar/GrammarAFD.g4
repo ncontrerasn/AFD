@@ -28,7 +28,7 @@ transicion: ESTADO 'pasa_a' predicado
 
 conjunto_transiciones: transicion conj_tran ;
 
-conj_tran: ',' transicion
+conj_tran: ',' transicion conj_tran
          |
          ;
 
@@ -38,9 +38,9 @@ mas_pred: ',' DECL_ALF mas_pred
         |
         ;
 
-conjunto_predicados: predicado otro_pred '}' ',';
+conjunto_predicados: predicado otro_pred '}';
 
-otro_pred: ',' predicado
+otro_pred: ',' predicado otro_pred
          |
          ;
 
@@ -55,3 +55,4 @@ COMMENT: '/#' .*? '#/' ;
 LINE_COMMENT: '#' ~[\r\n]* -> skip ;
 
 LLAVE_IZQ: '{' ;
+
