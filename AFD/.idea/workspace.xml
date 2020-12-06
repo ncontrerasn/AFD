@@ -1,22 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba2bdfd-9db3-4bf7-8a76-37fc90cf3d72" name="Default Changelist" comment="" />
+    <list default="true" id="dba2bdfd-9db3-4bf7-8a76-37fc90cf3d72" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_8_complete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/ST4-4.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/antlr-runtime-3.5.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/antlr4-intellij-adaptor-0.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/antlr4-runtime-4.8-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/intellij-plugin-v4-1.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/javax.json-1.0.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/org.abego.treelayout.core-1.0.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/searchableOptions-1.14.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AFD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AFD.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr-4.8-complete.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/antlr4-4.8-1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1lFRYrlKcuxa15HQbjG3CUH6J2j" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ST4-4.3.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -29,6 +50,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicolas Contreras\Desktop\rep\AFD\AFD\lib" />
       <recent name="C:\Users\Nicolas Contreras\Desktop\AFD\lib" />
     </key>
   </component>
@@ -52,6 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607190904379</updated>
       <workItem from="1607190913432" duration="7532000" />
+      <workItem from="1607218438482" duration="1087000" />
     </task>
     <servers />
   </component>
@@ -59,13 +82,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1032" y="178" key="#Project_Structure" timestamp="1607217593735">
+    <state x="1032" y="178" key="#Project_Structure" timestamp="1607219538623">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607217593735" />
-    <state x="1220" y="274" key="FileChooserDialogImpl" timestamp="1607216623094">
+    <state x="1032" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607219538623" />
+    <state x="771" y="305" key="FileChooserDialogImpl" timestamp="1607219426098">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="274" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607216623094" />
+    <state x="771" y="305" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607219426098" />
   </component>
 </project>
