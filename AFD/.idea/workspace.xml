@@ -2,32 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba2bdfd-9db3-4bf7-8a76-37fc90cf3d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/antlr_4_8_complete.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/ST4-4.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/antlr-runtime-3.5.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/antlr4-intellij-adaptor-0.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/antlr4-runtime-4.8-1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/intellij-plugin-v4-1.14.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/javax.json-1.0.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/org.abego.treelayout.core-1.0.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/searchableOptions-1.14.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MyVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AFD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AFD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr-4.8-complete.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/antlr4-4.8-1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFD.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFD.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDBaseListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDBaseVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDLexer.interp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDLexer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDLexer.tokens" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDVisitor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammar/GrammarAFD.g4" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/GrammarAFD.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/input/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/ST4-4.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr-runtime-3.5.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr4-4.8-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/antlr-4.8-complete.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr4-intellij-adaptor-0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/antlr4-runtime-4.8-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/intellij-plugin-v4-1.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/javax.json-1.0.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/org.abego.treelayout.core-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/searchableOptions-1.14.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.interp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1lFRYrlKcuxa15HQbjG3CUH6J2j" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,18 +62,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/ST4-4.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/antlr-4.8-complete.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nicolas Contreras\Desktop\rep\AFD\AFD\lib" />
       <recent name="C:\Users\Nicolas Contreras\Desktop\AFD\lib" />
@@ -56,7 +85,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="AFD" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
@@ -65,6 +94,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,21 +108,74 @@
       <option name="presentableId" value="Default" />
       <updated>1607190904379</updated>
       <workItem from="1607190913432" duration="7532000" />
-      <workItem from="1607218438482" duration="1087000" />
+      <workItem from="1607218438482" duration="1120000" />
+      <workItem from="1607219617597" duration="11981000" />
     </task>
+    <task id="LOCAL-00001" summary="dependencias">
+      <created>1607219561831</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607219561831</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dependencias" />
+    <option name="LAST_COMMIT_MESSAGE" value="dependencias" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="1032" y="178" key="#Project_Structure" timestamp="1607219538623">
+    <state x="946" y="0" width="974" height="1040" key="#Project_Structure" timestamp="1607222219127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1032" y="178" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607219538623" />
-    <state x="771" y="305" key="FileChooserDialogImpl" timestamp="1607219426098">
+    <state x="946" y="0" width="974" height="1040" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1607222219127" />
+    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser" timestamp="1607228154721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="771" y="305" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607219426098" />
+    <state x="1245" y="233" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1607228154721" />
+    <state x="1219" y="381" width="441" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1607220232914">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1219" y="381" width="441" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1607220232914" />
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1607219560512">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607219560512" />
+    <state x="771" y="305" key="FileChooserDialogImpl" timestamp="1607222129497">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="771" y="305" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607222129497" />
+    <state width="1876" height="306" key="GridCell.Tab.0.bottom" timestamp="1607231335964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
+    <state width="1876" height="306" key="GridCell.Tab.0.center" timestamp="1607231335964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
+    <state width="1876" height="306" key="GridCell.Tab.0.left" timestamp="1607231335964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
+    <state width="1876" height="306" key="GridCell.Tab.0.right" timestamp="1607231335964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
+    <state x="461" y="161" key="SettingsEditor" timestamp="1607219728028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607219728028" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607230685148">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607230685148" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607219640852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607219640852" />
   </component>
 </project>

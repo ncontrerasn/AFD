@@ -2,7 +2,11 @@ grammar GrammarAFD;
 
 automata: alfabeto estados transiciones 'fin';
 
-alfabeto: 'alfabeto' '[' DECL_ALF ( ',' DECL_ALF ) * ']' '.' ;
+alfabeto: 'alfabeto' '[' DECL_ALF decl_alf ']' '.' ;
+
+decl_alf: ',' DECL_ALF decl_alf
+        |
+        ;
 
 estados: e_inicial ',' e_final ',' e_intermedio '.' ;
 
@@ -10,17 +14,35 @@ e_inicial: 'E_inicial' ESTADO ;
 
 e_final: 'E_final' ESTADO ;
 
-e_intermedio: 'E_intermedio' ESTADO ( ',' ESTADO) * ;
+e_intermedio: 'E_intermedio' ESTADO decl_interm ;
 
-transiciones:  transicion | conjunto_transiciones '.' ;
+decl_interm: ',' ESTADO decl_interm
+           |
+           ;
 
-transicion: ESTADO 'pasa_a' ( predicado | conjunto_predicados ) ;
+transiciones: transicion '.'
+            | conjunto_transiciones '.' ;
 
-conjunto_transiciones: transicion ( ',' transicion ) * ;
+transicion: ESTADO 'pasa_a' predicado
+          | ESTADO 'pasa_a' LLAVE_IZQ conjunto_predicados ;
 
-predicado: ESTADO 'con' '[' DECL_ALF ( ',' DECL_ALF ) * ']' ;
+conjunto_transiciones: transicion conj_tran ;
 
-conjunto_predicados: '{' predicado (',' predicado ) * '}' ;
+conj_tran: ',' transicion
+         |
+         ;
+
+predicado: ESTADO 'con' '[' DECL_ALF mas_pred ']' ;
+
+mas_pred: ',' DECL_ALF mas_pred
+        |
+        ;
+
+conjunto_predicados: predicado otro_pred '}' ',';
+
+otro_pred: ',' predicado
+         |
+         ;
 
 DECL_ALF: [a-z] ;
 
@@ -31,3 +53,5 @@ WS: [ \t\r\n]+ -> skip ;
 COMMENT: '/#' .*? '#/' ;
 
 LINE_COMMENT: '#' ~[\r\n]* -> skip ;
+
+LLAVE_IZQ: '{' ;
