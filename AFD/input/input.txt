@@ -1,0 +1,12 @@
+alfabeto [x, y, z].
+E_inicial q0, E_final q2, E_intermedio q1.
+q1 pasa_a q2 con [x],
+q0 pasa_a {
+    q0 con [x, y],
+    q1 con [y]
+    },
+q2 pasa_a {
+    q2 con [z],
+    q1 con [y, z]
+    }.
+fin
