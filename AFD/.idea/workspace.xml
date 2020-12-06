@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dba2bdfd-9db3-4bf7-8a76-37fc90cf3d72" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyVisitor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AFD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AFD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFD.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFD.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDBaseListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDBaseVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDLexer.interp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDLexer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDLexer.tokens" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDListener.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDParser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/GrammarAFDVisitor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammar/GrammarAFD.g4" beforeDir="false" afterPath="$PROJECT_DIR$/grammar/GrammarAFD.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/input/input.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/ST4-4.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr-runtime-3.5.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr4-4.8-1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/lib/antlr-4.8-complete.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr4-intellij-adaptor-0.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/antlr4-runtime-4.8-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/intellij-plugin-v4-1.14.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/javax.json-1.0.4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/org.abego.treelayout.core-1.0.3.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/searchableOptions-1.14.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.interp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFD.tokens" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.interp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AFD/GrammarAFDLexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyVisitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1lFRYrlKcuxa15HQbjG3CUH6J2j" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -109,7 +85,7 @@
       <updated>1607190904379</updated>
       <workItem from="1607190913432" duration="7532000" />
       <workItem from="1607218438482" duration="1120000" />
-      <workItem from="1607219617597" duration="11981000" />
+      <workItem from="1607219617597" duration="15178000" />
     </task>
     <task id="LOCAL-00001" summary="dependencias">
       <created>1607219561831</created>
@@ -118,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607219561831</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="medio puteado">
+      <created>1607231737412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607231737412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,7 +109,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dependencias" />
-    <option name="LAST_COMMIT_MESSAGE" value="dependencias" />
+    <MESSAGE value="medio puteado" />
+    <option name="LAST_COMMIT_MESSAGE" value="medio puteado" />
   </component>
   <component name="WindowStateProjectService">
     <state x="946" y="0" width="974" height="1040" key="#Project_Structure" timestamp="1607222219127">
@@ -141,41 +125,49 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="381" width="441" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1607220232914" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1607219560512">
+    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1607231735824">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607219560512" />
+    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607231735824" />
     <state x="771" y="305" key="FileChooserDialogImpl" timestamp="1607222129497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="771" y="305" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1607222129497" />
-    <state width="1876" height="306" key="GridCell.Tab.0.bottom" timestamp="1607231335964">
+    <state width="1876" height="306" key="GridCell.Tab.0.bottom" timestamp="1607235556106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
-    <state width="1876" height="306" key="GridCell.Tab.0.center" timestamp="1607231335964">
+    <state width="1876" height="306" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607235556106" />
+    <state width="1876" height="306" key="GridCell.Tab.0.center" timestamp="1607235556106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
-    <state width="1876" height="306" key="GridCell.Tab.0.left" timestamp="1607231335964">
+    <state width="1876" height="306" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607235556106" />
+    <state width="1876" height="306" key="GridCell.Tab.0.left" timestamp="1607235556106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
-    <state width="1876" height="306" key="GridCell.Tab.0.right" timestamp="1607231335964">
+    <state width="1876" height="306" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607235556106" />
+    <state width="1876" height="306" key="GridCell.Tab.0.right" timestamp="1607235556106">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607231335964" />
+    <state width="1876" height="306" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607235556106" />
+    <state x="669" y="235" key="MultipleFileMergeDialog" timestamp="1607234070566">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="669" y="235" key="MultipleFileMergeDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607234070566" />
     <state x="461" y="161" key="SettingsEditor" timestamp="1607219728028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="161" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1607219728028" />
-    <state width="498" height="446" key="SwitcherDM" timestamp="1607230685148">
+    <state width="498" height="446" key="SwitcherDM" timestamp="1607233013414">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607230685148" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607219640852">
+    <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607233013414" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607231744590">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607219640852" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607231744590" />
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607234060089">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607234060089" />
   </component>
 </project>

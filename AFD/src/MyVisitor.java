@@ -93,9 +93,9 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     @Override
     public Object visitTransicion(GrammarAFDParser.TransicionContext ctx) {
         if(ctx.LLAVE_IZQ() != null)
-            visitPredicado(ctx.predicado());
-        else
             visitConjunto_predicados(ctx.conjunto_predicados());
+        else
+            visitPredicado(ctx.predicado());
         return null;
     }
 
@@ -108,8 +108,10 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
 
     @Override
     public Object visitConj_tran(GrammarAFDParser.Conj_tranContext ctx) {
-        if(ctx.transicion() != null)
+        if(ctx.transicion() != null){
             visitTransicion(ctx.transicion());
+            visitConj_tran(ctx.conj_tran());
+        }
         return null;
     }
 
@@ -129,15 +131,20 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
 
     @Override
     public Object visitConjunto_predicados(GrammarAFDParser.Conjunto_predicadosContext ctx) {
-        visitPredicado(ctx.predicado());
-        visitOtro_pred(ctx.otro_pred());
+        if(ctx.predicado() != null && ctx.otro_pred() != null){
+            visitPredicado(ctx.predicado());
+            visitOtro_pred(ctx.otro_pred());
+        }
         return null;
     }
 
     @Override
     public Object visitOtro_pred(GrammarAFDParser.Otro_predContext ctx) {
-        if(ctx.predicado() != null)
+        if(ctx.predicado() != null){
             visitPredicado(ctx.predicado());
+            visitOtro_pred(ctx.otro_pred());
+        }
+
         return null;
     }
 }
