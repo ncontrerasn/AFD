@@ -18,7 +18,31 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
             }
             System.out.println("");
         }*/
+        String prueba = "abbbbab";
+        probarAutomata(prueba);
         return null;
+    }
+
+    private void probarAutomata(String prueba) {
+        System.out.println("\nCadena ingresada: " + prueba + "\n");
+        String estadoFinal = estados.get(1);
+        String estadoActual;
+        int fila, columna;
+        System.out.print(estados.get(0));
+        fila = 0;
+        for(int i = 0; i < prueba.length(); i++){
+            columna = alfabeto.indexOf(prueba.charAt(i));
+            estadoActual = matriz[fila][columna];
+            if(estadoActual == null){
+                System.out.println("\n\nNo hay un camino para que la cadena sea aceptada.");
+                break;
+            }
+            fila = estados.indexOf(estadoActual);
+            //System.out.println("pasa a "+ estadoActual + " con símbolo " + prueba.charAt(i));
+            System.out.print(" --| [" + prueba.charAt(i)+ "] " + estadoActual);
+            if(i == prueba.length()-1 && estadoActual.equals(estadoFinal))
+                System.out.println("\n\nLa cadena ingresada es parte del lenguaje aceptado por el autómata.");
+        }
     }
 
     @Override
