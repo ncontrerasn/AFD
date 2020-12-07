@@ -44,15 +44,14 @@ otro_pred: ',' predicado otro_pred
          |
          ;
 
+WS: [ \t\r\n]+ -> skip ;
+
+COMMENT: '/#' .*? '#/' -> skip ;
+
+LINE_COMMENT: '#' ~[\r\n]* -> skip ;
+
 DECL_ALF: [a-z] ;
 
 ESTADO: [a-z][0-9] ;
 
-WS: [ \t\r\n]+ -> skip ;
-
-COMMENT: '/#' .*? '#/' ;
-
-LINE_COMMENT: '#' ~[\r\n]* -> skip ;
-
 LLAVE_IZQ: '{' ;
-

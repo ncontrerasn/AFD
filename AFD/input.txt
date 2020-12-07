@@ -1,12 +1,20 @@
-alfabeto [x, y, z].
+/#
+autómata que acepta todas las cadenas que contienen
+exactamente dos aes
+#/
+
+alfabeto [a, b].
+
 E_inicial q0, E_final q2, E_intermedio q1.
-q1 pasa_a q2 con [x],
+
 q0 pasa_a {
-    q0 con [x, y],
-    q1 con [y]
+    q0 con [b],
+    q1 con [a]
     },
-q2 pasa_a {
-    q2 con [z],
-    q1 con [y, z]
-    }.
+q1 pasa_a {
+    q1 con [b],
+    q2 con [a]
+    },
+q2 pasa_a q2 con [b].
+
 fin

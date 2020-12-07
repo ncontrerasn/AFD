@@ -4,12 +4,20 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
 
     ArrayList<String> estados = new ArrayList<>();
     ArrayList<Character> alfabeto = new ArrayList<>();
+    String[][] matriz;//esta matriz gurda con filas igual el orden que el vector de estados, si aparece q0, q5 y q2, las filas de la matriz serán q0, q5 y q2
+    String x = "";
 
     @Override
     public Object visitAutomata(GrammarAFDParser.AutomataContext ctx) {
         visitAlfabeto(ctx.alfabeto());
         visitEstados(ctx.estados());
         visitTransiciones(ctx.transiciones());
+        /*for (int i = 0; i < 3; i++){
+            for (int j = 0; j < 2; j++){
+                System.out.print(matriz[i][j]);
+            }
+            System.out.println("");
+        }*/
         return null;
     }
 
@@ -17,7 +25,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     public Object visitAlfabeto(GrammarAFDParser.AlfabetoContext ctx) {
         char letra = ctx.DECL_ALF().toString().charAt(0);
         alfabeto.add(letra);
-        System.out.println(letra);
         if(ctx.decl_alf() != null)
             visitDecl_alf(ctx.decl_alf());
         return null;
@@ -28,7 +35,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
         if(ctx.DECL_ALF() != null){
             char letra = ctx.DECL_ALF().toString().charAt(0);
             alfabeto.add(letra);
-            System.out.println(letra);
         }
         if(ctx.decl_alf() != null)
             visitDecl_alf(ctx.decl_alf());
@@ -47,7 +53,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     public Object visitE_inicial(GrammarAFDParser.E_inicialContext ctx) {
         String estado = ctx.ESTADO().toString();
         estados.add(estado);
-        System.out.println(estado);
         return null;
     }
 
@@ -55,7 +60,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     public Object visitE_final(GrammarAFDParser.E_finalContext ctx) {
         String estado = ctx.ESTADO().toString();
         estados.add(estado);
-        System.out.println(estado);
         return null;
     }
 
@@ -63,7 +67,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     public Object visitE_intermedio(GrammarAFDParser.E_intermedioContext ctx) {
         String estado = ctx.ESTADO().toString();
         estados.add(estado);
-        System.out.println(estado);
         if(ctx.decl_interm() != null)
             visitDecl_interm(ctx.decl_interm());
         return null;
@@ -74,7 +77,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
         if(ctx.ESTADO() != null){
             String estado = ctx.ESTADO().toString();
             estados.add(estado);
-            System.out.println(estado);
         }
         if(ctx.ESTADO() != null)
             visitDecl_interm(ctx.decl_interm());
@@ -83,6 +85,8 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
 
     @Override
     public Object visitTransiciones(GrammarAFDParser.TransicionesContext ctx) {
+        matriz = new String[estados.size()][alfabeto.size()];
+        //3 filas x 2 columnas con este ejemplo
         if(ctx.transicion() != null)
             visitTransicion(ctx.transicion());
         else
@@ -90,12 +94,35 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
         return null;
     }
 
-    @Override
+    @Override//
     public Object visitTransicion(GrammarAFDParser.TransicionContext ctx) {
-        if(ctx.LLAVE_IZQ() != null)
-            visitConjunto_predicados(ctx.conjunto_predicados());
-        else
-            visitPredicado(ctx.predicado());
+        ArrayList<String> res;
+        String estado = ctx.ESTADO().toString();
+        int fila = estados.indexOf(estado);
+        int columna;
+        if(ctx.LLAVE_IZQ() != null){
+            res = (ArrayList<String>) visitConjunto_predicados(ctx.conjunto_predicados());
+            for(String s : res){
+                String[] arr = s.split("\\s+");
+                for(int i = arr.length - 1; i >= 1; i--){
+                    //System.out.println(arr[i]);
+                    char c = arr[i].charAt(0);
+                    columna = alfabeto.indexOf(c);
+                    //System.out.println("estado: "+estado+", etiqueta: "+c +", fila:"+fila+ ", col: " + columna+", hacia: "+arr[0]);
+                    matriz[fila][columna] = arr[0];
+                }
+            }
+        }
+        else{
+            String s = "";
+            s += visitPredicado(ctx.predicado());
+            String[] arr = s.split("\\s+");
+            for(int i = arr.length - 1; i >= 1; i--){
+                char c = arr[i].charAt(0);
+                columna = alfabeto.indexOf(c);
+                matriz[fila][columna] = arr[0];
+            }
+        }
         return null;
     }
 
@@ -117,34 +144,42 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
 
     @Override
     public Object visitPredicado(GrammarAFDParser.PredicadoContext ctx) {
-        if(ctx.mas_pred() != null)
+        x = "";
+        String s = "";
+        s += ctx.ESTADO().toString() + " " + ctx.DECL_ALF().toString();
+        if(ctx.mas_pred() != null){
             visitMas_pred(ctx.mas_pred());
-        return null;
+        }
+        s += x;
+        return (Object) s;
     }
 
     @Override
     public Object visitMas_pred(GrammarAFDParser.Mas_predContext ctx) {
-        if(ctx.mas_pred() != null)
+        if(ctx.mas_pred() != null){
+             x += " " + ctx.DECL_ALF().toString();
             visitMas_pred(ctx.mas_pred());
+        }
         return null;
     }
 
     @Override
     public Object visitConjunto_predicados(GrammarAFDParser.Conjunto_predicadosContext ctx) {
+        ArrayList<String> res = new ArrayList<>();
         if(ctx.predicado() != null && ctx.otro_pred() != null){
-            visitPredicado(ctx.predicado());
-            visitOtro_pred(ctx.otro_pred());
+            res.add((String) visitPredicado(ctx.predicado()));
+            res.add((String) visitOtro_pred(ctx.otro_pred()));
         }
-        return null;
+        return (Object) res;
     }
 
     @Override
     public Object visitOtro_pred(GrammarAFDParser.Otro_predContext ctx) {
+        String s = "";
         if(ctx.predicado() != null){
-            visitPredicado(ctx.predicado());
+            s += visitPredicado(ctx.predicado());
             visitOtro_pred(ctx.otro_pred());
         }
-
-        return null;
+        return (Object) s;
     }
 }
