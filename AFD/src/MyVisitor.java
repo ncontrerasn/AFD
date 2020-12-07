@@ -18,7 +18,7 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
             }
             System.out.println("");
         }*/
-        String prueba = "abbbbab";
+        String prueba = "abbbbaab";
         probarAutomata(prueba);
         return null;
     }
@@ -35,6 +35,7 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
             estadoActual = matriz[fila][columna];
             if(estadoActual == null){
                 System.out.println("\n\nNo hay un camino para que la cadena sea aceptada.");
+                System.out.println("La cadena ingresada no hace parte del lenguaje aceptado por el autómata.");
                 break;
             }
             fila = estados.indexOf(estadoActual);
