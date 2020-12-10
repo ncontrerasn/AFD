@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dba2bdfd-9db3-4bf7-8a76-37fc90cf3d72" name="Default Changelist" comment="">
+    <list default="true" id="dba2bdfd-9db3-4bf7-8a76-37fc90cf3d72" name="Default Changelist" comment="métricas, procesamiento y descarga de autómata">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyVisitor.java" afterDir="false" />
     </list>
@@ -84,7 +84,7 @@
       <workItem from="1607219617597" duration="15552000" />
       <workItem from="1607281777155" duration="4578000" />
       <workItem from="1607297765501" duration="16874000" />
-      <workItem from="1607557064754" duration="8842000" />
+      <workItem from="1607557064754" duration="11327000" />
     </task>
     <task id="LOCAL-00001" summary="dependencias">
       <created>1607219561831</created>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607320840116</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="métricas, procesamiento y descarga de autómata">
+      <created>1607571838387</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1607571838388</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,7 +148,8 @@
     <MESSAGE value="guarda alfabeto y estados, falta hacer la matriz de transiciones" />
     <MESSAGE value="matriz correcta" />
     <MESSAGE value="procesa cadenas con descripción del camino" />
-    <option name="LAST_COMMIT_MESSAGE" value="procesa cadenas con descripción del camino" />
+    <MESSAGE value="métricas, procesamiento y descarga de autómata" />
+    <option name="LAST_COMMIT_MESSAGE" value="métricas, procesamiento y descarga de autómata" />
   </component>
   <component name="WindowStateProjectService">
     <state x="946" y="0" width="974" height="1040" key="#Project_Structure" timestamp="1607222219127">
@@ -156,10 +164,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1219" y="381" width="441" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1607220232914" />
-    <state x="560" y="109" key="CommitChangelistDialog2" timestamp="1607320838736">
+    <state x="831" y="124" key="CommitChangelistDialog2" timestamp="1607571946348">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="109" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607320838736" />
+    <state x="831" y="124" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1607571946348" />
     <state x="771" y="305" key="FileChooserDialogImpl" timestamp="1607222129497">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -192,10 +200,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040@0.0.1920.1040" timestamp="1607233013414" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607320844303">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607571846508">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607320844303" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607571846508" />
     <state x="752" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607234060089">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

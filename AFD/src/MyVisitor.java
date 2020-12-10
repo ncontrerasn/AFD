@@ -59,8 +59,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
             e.printStackTrace();
         } finally {
         try {
-            // Nuevamente aprovechamos el finally para
-            // asegurarnos que se cierra el fichero.
             if (null != fichero)
                 fichero.close();
             if( null != fr )
@@ -71,7 +69,6 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     }
         int lineasEscritas = lineasTotales - comentarios;
         float porcentajeComentarios = (float) comentarios / lineasTotales * 100;
-
         System.out.println("\nDensidad de líneas de comentarios: " + porcentajeComentarios + " %");
         System.out.println("Número de líneas de código: " + lineasEscritas);
     }
@@ -96,13 +93,11 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
                 break;
             }
             fila = estados.indexOf(estadoActual);
-            //System.out.println("pasa a "+ estadoActual + " con símbolo " + prueba.charAt(i));
             System.out.print(", " + prueba.substring(i) + " ] |-- [ " + estadoActual);
             if(i == prueba.length()-1 && estadoActual.equals(estadoFinal)){
                 System.out.print(", " + lambda + " ]");
                 System.out.println("\n\nLa cadena ingresada es parte del lenguaje aceptado por el autómata.");
             }
-
         }
         TFin = System.currentTimeMillis(); //Tomamos la hora en que finalizó el algoritmo y la almacenamos en la variable T
         tiempo = TFin - TInicio; //Calculamos los milisegundos de diferencia
