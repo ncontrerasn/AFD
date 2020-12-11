@@ -8,7 +8,7 @@ decl_alf: ',' DECL_ALF decl_alf
         |
         ;
 
-estados: e_inicial ',' e_final ',' e_intermedio '.' ;
+estados: e_inicial ',' e_intermedio ',' e_final '.' ;
 
 e_inicial: 'E_inicial' ESTADO ;
 

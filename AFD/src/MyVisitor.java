@@ -127,8 +127,8 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     @Override
     public Object visitEstados(GrammarAFDParser.EstadosContext ctx) {
         visitE_inicial(ctx.e_inicial());
-        visitE_final(ctx.e_final());
         visitE_intermedio(ctx.e_intermedio());
+        visitE_final(ctx.e_final());
         return null;
     }
 

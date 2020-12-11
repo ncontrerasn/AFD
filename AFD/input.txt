@@ -5,7 +5,7 @@ exactamente dos aes
 
 alfabeto [a, b].
 
-E_inicial q0, E_final q2, E_intermedio q1.
+E_inicial q0, E_intermedio q1, E_final q2.
 
 q0 pasa_a {
     q0 con [b],
