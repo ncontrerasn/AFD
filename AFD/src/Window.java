@@ -9,11 +9,11 @@ public class Window extends JFrame {
     String[][] matriz;
 
     public Window(ArrayList<String> estados, ArrayList<Character> alfabeto, String[][] matriz){
-        super("AUTOMA-CINCO");
+        super("AUTOMA - GRAFO");
         this.estados = estados;
         this.alfabeto = alfabeto;
         this.matriz = matriz;
-        setSize(350,350);
+        setSize(600,350);
         setVisible(true);
     }
 

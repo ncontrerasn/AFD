@@ -19,5 +19,8 @@ public class Main {
         Window window = new Window(loader.estados, loader.alfabeto, loader.matriz);
         window.setLocation(800, 250);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        ProcesamientoAFD procesamientoAFD = new ProcesamientoAFD();
+        procesamientoAFD.setLocation(800, 600);
+        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
