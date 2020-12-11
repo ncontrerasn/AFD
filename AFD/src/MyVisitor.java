@@ -38,7 +38,7 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
         int lineasTotales = 0, comentarios = 0;
         boolean inicioComentario = false;
         try {
-            fichero = new FileWriter("miAutómata.txt");
+            fichero = new FileWriter("miAFD.txt");
             pw = new PrintWriter(fichero);
             String linea;
             while((linea=br.readLine())!=null){
