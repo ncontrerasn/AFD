@@ -8,19 +8,22 @@ public class Window extends JFrame {
     ArrayList<String> estados = new ArrayList<>();
     ArrayList<Character> alfabeto = new ArrayList<>();
     String[][] matriz;
+    JButton jButton;
+    JTextArea jTextArea;
+    JPanel jPanel;
 
     public Window(ArrayList<String> estados, ArrayList<Character> alfabeto, String[][] matriz){
         super("AUTOMA-CINCO");
         this.estados = estados;
         this.alfabeto = alfabeto;
         this.matriz = matriz;
-        setSize(600,500);
+        setSize(350,350);
         setVisible(true);
+        //add(jPanel);
     }
 
     public void paint(Graphics g){
         super.paint(g);
-
         //flecha incial
         g.drawLine(25,195,50,195);
         g.fillPolygon(new int[]{40, 40, 50}, new int[]{190,200,195}, 3);

@@ -1,8 +1,6 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
-
 import javax.swing.*;
-import java.util.ArrayList;
 
 public class Main {
 
@@ -13,7 +11,13 @@ public class Main {
         ParseTree tree = parser.automata();
         MyVisitor<Object> loader = new MyVisitor<Object>();
         loader.visit(tree);
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        /*Form form = new Form(loader.estados, loader.alfabeto, loader.matriz);
+        form.setVisible(true);
+        form.setLocation(400, 250);
+        form.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);*/
         Window window = new Window(loader.estados, loader.alfabeto, loader.matriz);
+        window.setLocation(800, 250);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }
