@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.io.*;
 
 public class MyVisitor<T> extends GrammarAFDBaseVisitor {
 
@@ -7,101 +6,18 @@ public class MyVisitor<T> extends GrammarAFDBaseVisitor {
     ArrayList<Character> alfabeto = new ArrayList<>();
     String[][] matriz;//esta matriz gurda con filas igual el orden que el vector de estados, si aparece q0, q5 y q2, las filas de la matriz serán q0, q5 y q2
     String x = "";
+    long tiempoConstruccion;
 
     @Override
     public Object visitAutomata(GrammarAFDParser.AutomataContext ctx) {
-        long TInicio, TFin, tiempo; //Variables para determinar el tiempo de ejecución
+        long TInicio, TFin; //Variables para determinar el tiempo de ejecución
         TInicio = System.currentTimeMillis();
         visitAlfabeto(ctx.alfabeto());
         visitEstados(ctx.estados());
         visitTransiciones(ctx.transiciones());
         TFin = System.currentTimeMillis(); //Tomamos la hora en que finalizó el algoritmo y la almacenamos en la variable T
-        tiempo = TFin - TInicio; //Calculamos los milisegundos de diferencia
-        System.out.println("\nTiempo de ejecución en milisegundos de la construcción del autómata: " + tiempo);
-
-        String prueba = "bbbbaaba";
-        probarAutomata(prueba);
-        try {
-            generarMetricas();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
+        tiempoConstruccion = TFin - TInicio; //Calculamos los milisegundos de diferencia
         return null;
-    }
-    //los comentarios por ahora solo sirven si el simbolo de comnetario esta en la posicion 0 y/o 1 (en caso de multiple) del renglon
-    private void generarMetricas() throws FileNotFoundException {
-        File archivo = new File ("input.txt");
-        FileReader fr = new FileReader (archivo);
-        BufferedReader br = new BufferedReader(fr);
-        FileWriter fichero = null;
-        PrintWriter pw = null;
-        int lineasTotales = 0, comentarios = 0;
-        boolean inicioComentario = false;
-        try {
-            fichero = new FileWriter("miAFD.txt");
-            pw = new PrintWriter(fichero);
-            String linea;
-            while((linea=br.readLine())!=null){
-                pw.println(linea);
-                lineasTotales++;
-                if(linea.equals(""))
-                    lineasTotales--;
-                else if(linea.charAt(0) == '#' && linea.charAt(1) != '/')
-                    comentarios++;
-                else if(linea.charAt(1) == '#' && linea.charAt(0) == '/')
-                    inicioComentario = true;
-                if(inicioComentario)
-                    comentarios++;
-                if(inicioComentario && (linea.charAt(linea.length() - 2) == '#' && linea.charAt(linea.length() - 1) == '/'))
-                    inicioComentario = false;
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-        try {
-            if (null != fichero)
-                fichero.close();
-            if( null != fr )
-                fr.close();
-        } catch (Exception e2) {
-            e2.printStackTrace();
-        }
-    }
-        int lineasEscritas = lineasTotales - comentarios;
-        float porcentajeComentarios = (float) comentarios / lineasTotales * 100;
-        System.out.println("\nDensidad de líneas de comentarios: " + porcentajeComentarios + " %");
-        System.out.println("Número de líneas de código: " + lineasEscritas);
-    }
-
-    private void probarAutomata(String prueba) {
-        System.out.println("\nCadena ingresada: " + prueba + "\n");
-        String estadoFinal = estados.get(1);
-        String estadoActual;
-        int fila, columna;
-        System.out.print("[ " + estados.get(0));
-        fila = 0;
-        char lambda = 955;
-        long TInicio, TFin, tiempo; //Variables para determinar el tiempo de ejecución
-        TInicio = System.currentTimeMillis();
-        for(int i = 0; i < prueba.length(); i++){
-            columna = alfabeto.indexOf(prueba.charAt(i));
-            estadoActual = matriz[fila][columna];
-            if(estadoActual == null){
-                System.out.print(", " + prueba.substring(i) + " ]");
-                System.out.println("\n\nNo hay un camino para que la cadena sea aceptada.");
-                System.out.println("La cadena ingresada no hace parte del lenguaje aceptado por el autómata.");
-                break;
-            }
-            fila = estados.indexOf(estadoActual);
-            System.out.print(", " + prueba.substring(i) + " ] |-- [ " + estadoActual);
-            if(i == prueba.length()-1 && estadoActual.equals(estadoFinal)){
-                System.out.print(", " + lambda + " ]");
-                System.out.println("\n\nLa cadena ingresada es parte del lenguaje aceptado por el autómata.");
-            }
-        }
-        TFin = System.currentTimeMillis(); //Tomamos la hora en que finalizó el algoritmo y la almacenamos en la variable T
-        tiempo = TFin - TInicio; //Calculamos los milisegundos de diferencia
-        System.out.println("\nTiempo de ejecución de procesamiento de la cadena en milisegundos: " + tiempo);
     }
 
     @Override

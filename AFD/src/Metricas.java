@@ -6,7 +6,7 @@ public class Metricas extends JFrame{
 
     public Metricas(long tiempoConstruccion, long tiempoProcesamiento, int lineas, float comentarios){
         add(panel1);
-        setSize(600,200);
+        setSize(700,200);
         setTitle("AUTOMA - MÉTRICAS");
         String met = "Tiempo de construcción del autómata: " + tiempoConstruccion + " ms.";
         met += "\n\nTiempo de procesamiento de la cadena: " + tiempoProcesamiento + " ms.";

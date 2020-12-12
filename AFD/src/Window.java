@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 public class Window extends JFrame {
 
-    ArrayList<String> estados = new ArrayList<>();
-    ArrayList<Character> alfabeto = new ArrayList<>();
+    ArrayList<String> estados;
+    ArrayList<Character> alfabeto;
     String[][] matriz;
 
     public Window(ArrayList<String> estados, ArrayList<Character> alfabeto, String[][] matriz){
@@ -13,7 +13,7 @@ public class Window extends JFrame {
         this.estados = estados;
         this.alfabeto = alfabeto;
         this.matriz = matriz;
-        setSize(600,350);
+        setSize(700,350);
         setVisible(true);
     }
 
