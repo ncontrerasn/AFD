@@ -44,10 +44,8 @@ public class Form extends JFrame {
                 loader.visit(tree);
                 Window window = new Window(loader.estados, loader.alfabeto, loader.matriz);
                 window.setLocation(800, 450);
-                window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 ProcesamientoAFD procesamientoAFD = new ProcesamientoAFD(loader.estados, loader.alfabeto, loader.matriz, loader.tiempoConstruccion, lineasEscritas, porcentajeComentarios);
                 procesamientoAFD.setLocation(800, 200);
-                window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });
         descargarButton.addActionListener(new ActionListener() {
