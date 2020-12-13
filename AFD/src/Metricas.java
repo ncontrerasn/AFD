@@ -1,6 +1,9 @@
 import javax.swing.*;
 
 public class Metricas extends JFrame{
+    /*
+    clase que muestra las metricas en un formulario
+     */
     private JTextArea textArea1;
     private JPanel panel1;
 

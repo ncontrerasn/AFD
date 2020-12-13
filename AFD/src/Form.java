@@ -9,6 +9,15 @@ import java.awt.event.ActionListener;
 import java.io.*;
 
 public class Form extends JFrame {
+    /*
+    en esta clase se llama a MyVisitor que es la clase que hace el analisis de ANTLR con la entrada que se captura, luego
+    se llama a Window para ver el AFD ingresado y ProcesamientoAFD para poder hacer pruebas de casdenas pero solo ver
+    el procesamiento de forma textual.
+    Al final se genran las metricas de lineas escritas y el porcentaje de comentarios.
+    Hay 2 botones:
+        simular: para hacer lo que hace ProcesamientoAFD.
+        descargar: para generar un txt en el escritorio con el codigo ingresado.
+     */
     private JButton simularButton;
     private JTextArea textArea2;
     private JPanel panel1;
@@ -34,10 +43,10 @@ public class Form extends JFrame {
                 MyVisitor<Object> loader = new MyVisitor<Object>();
                 loader.visit(tree);
                 Window window = new Window(loader.estados, loader.alfabeto, loader.matriz);
-                window.setLocation(800, 200);
+                window.setLocation(800, 450);
                 window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 ProcesamientoAFD procesamientoAFD = new ProcesamientoAFD(loader.estados, loader.alfabeto, loader.matriz, loader.tiempoConstruccion, lineasEscritas, porcentajeComentarios);
-                procesamientoAFD.setLocation(800, 550);
+                procesamientoAFD.setLocation(800, 200);
                 window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             }
         });

@@ -1,11 +1,16 @@
 import java.util.ArrayList;
 
 public class CadenaAFD {
-
+    /*
+    clase que calcula el camino que debe cruzar una cadena de prueba en el AFD.
+    calcula el tiempo que tarda en procesar la cadena en la variable tiempo.
+    llena el array orden que guarda las posciones de los estados que tiene que atravesar.
+    */
     ArrayList<String> estados;
     ArrayList<Character> alfabeto;
     String[][] matriz;
     long tiempo;
+    ArrayList<Integer> orden = new ArrayList<>();
 
     public CadenaAFD(ArrayList<String> estados, ArrayList<Character> alfabeto, String[][] matriz){
         this.estados = estados;
@@ -14,6 +19,7 @@ public class CadenaAFD {
     }
 
     public String probarAutomata(String prueba) {
+        orden.add(0);
         String res = "";
         String estadoFinal = estados.get(estados.size() - 1);
         String estadoActual;
@@ -33,6 +39,7 @@ public class CadenaAFD {
                 break;
             }
             fila = estados.indexOf(estadoActual);
+            orden.add(estados.indexOf(estadoActual));
             res += ", " + prueba.substring(i) + " ] |-- [ " + estadoActual;
             if(i == prueba.length() - 1 && estadoActual.equals(estadoFinal)){
                 res += ", " + lambda + " ]";

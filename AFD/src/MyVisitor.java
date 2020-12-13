@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 public class MyVisitor<T> extends GrammarAFDBaseVisitor {
+    /*
+    se procesa la entrada con las clases de ANTLR y a la vez se llena los arrays estados y alfabeto con la entrada.
+    se llena la matriz de adyacencia
+     */
 
     ArrayList<String> estados = new ArrayList<>();
     ArrayList<Character> alfabeto = new ArrayList<>();

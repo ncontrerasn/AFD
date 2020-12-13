@@ -3,6 +3,9 @@ import java.awt.*;
 import java.util.ArrayList;
 
 public class Window extends JFrame {
+    /*
+    clase que dibuja el AFD generado por el codigo ingresado. solo el dibujo estatico
+     */
 
     ArrayList<String> estados;
     ArrayList<Character> alfabeto;
@@ -13,7 +16,7 @@ public class Window extends JFrame {
         this.estados = estados;
         this.alfabeto = alfabeto;
         this.matriz = matriz;
-        setSize(700,350);
+        setSize(350,350);
         setVisible(true);
     }
 
