@@ -132,6 +132,7 @@ public class Grafo extends JFrame {
                 g.setColor(Color.BLACK);
                 g.drawString(cade, 120,80);
                 contador++;
+                //estadosOrdenados.indexOf(contador)
             }
 
         });
